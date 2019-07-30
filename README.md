@@ -6,8 +6,9 @@ HawkEye Disaster Monitor and Alert System
    1. For taking *images* 
      * Traffic Cameras
      * ATM/Security Cameras
-     * Mobile Phone Cameras
-   2. For *measuring*
+     * Mobile Phone Cameras (*Users send images*)
+     * Social Media/News (*facebook/twitter/google*)
+   2. For *measuring* water/snow level at
      * Vehicles (2/3/4 Wheeler - Tyre/Body/Severe Levels)
      * People (Ankle/Waist/Neck/Drowning)
      * Objects (Traffic Cones/Dividers, Electric/Telephone Poles) 
@@ -25,6 +26,21 @@ HawkEye Disaster Monitor and Alert System
    4. To provide *chat assistance* using
      * Facebook Messenger (**No need of installing any fancy apps or software**)
      * Watson Assistant
+
+## Future Plan
+1. Find/Track Rescue centers/temporary rehabilitation camps and provide info on chat. 
+1. Monitor Social Media and New platforms
+1. Identify open ATMs/Commercial Places
+1. Integrate Satellite/Radar/Drone info.
+1. Analyze Image for background objects like famous buildings/structures to compensate for any gps error.
+1. Missing People Tracker
+
+## Videos
+Please click on the description to launch the videos.
+* [**Introduction** video of 3 mins](https://youtu.be/FysReNaKB0U) and [more](https://youtu.be/CgMHSGOgnBg)
+* [**Project & Technical** Demo](https://youtu.be/b27EbEaVbZc) and Short Demo (https://www.youtube.com/watch?v=1JtI4xT7ii8&feature=youtu.be)
+* [**Image Analysis** Demo using Python](https://youtu.be/yD0ZUwU4pRU)
+* [*Watson Assistant* and **Facebook Messenger** in Action part 1](https://youtu.be/U40FcEYIrlg) and [part 2](https://youtu.be/Vir_ZGqQ_g4)    
 
 
 # Contents of the Project
