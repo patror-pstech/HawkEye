@@ -96,6 +96,21 @@
         },
         {
           "text": "rain in"
+        },
+        {
+          "text": "earthquake"
+        },
+        {
+          "text": "tsunami"
+        },
+        {
+          "text": "heavy storm"
+        },
+        {
+          "text": "heavy rain"
+        },
+        {
+          "text": "rain"
         }
       ],
       "description": ""
@@ -2244,350 +2259,350 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "?M=24.879999&N=74.629997",
+          "value": "?L=24.879999&M=74.629997",
           "synonyms": [
             "Chittorgarh"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=21.25&N=81.629997",
+          "value": "?L=21.25&M=81.629997",
           "synonyms": [
             "Raipur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=24.7945&N=73.055",
+          "value": "?L=24.7945&M=73.055",
           "synonyms": [
-            "Pindwara"
+            "PiMdwara"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=19.155001&N=72.849998",
+          "value": "?L=19.155001&M=72.849998",
           "synonyms": [
-            "Goregaon"
+            "GoregaoM"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=16.994444&N=73.300003",
+          "value": "?L=16.994444&M=73.300003",
           "synonyms": [
-            "Ratnagiri"
+            "RatMagiri"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=28.590361&N=78.571762",
+          "value": "?L=28.590361&M=78.571762",
           "synonyms": [
-            "Sambhal"
+            "SaLbhal"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=23.597969&N=72.969818",
+          "value": "?L=23.597969&M=72.969818",
           "synonyms": [
-            "Himmatnagar"
+            "HiLLatMagar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=21.190449&N=81.28492",
+          "value": "?L=21.190449&M=81.28492",
           "synonyms": [
             "Durg"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=18.106659&N=83.395554",
+          "value": "?L=18.106659&M=83.395554",
           "synonyms": [
-            "Vizianagaram"
+            "ViziaMagaraL"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=22.422455&N=85.760651",
+          "value": "?L=22.422455&M=85.760651",
           "synonyms": [
             "Jorapokhar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=30.525005&N=75.890121",
+          "value": "?L=30.525005&M=75.890121",
           "synonyms": [
-            "Malerkotla"
+            "Lalerkotla"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=19.186354&N=73.191948",
+          "value": "?L=19.186354&M=73.191948",
           "synonyms": [
-            "Ambernath"
+            "ALberMath"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=23.223047&N=82.87056",
+          "value": "?L=23.223047&M=82.87056",
           "synonyms": [
             "Surajpur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=25.989836&N=79.450035",
+          "value": "?L=25.989836&M=79.450035",
           "synonyms": [
             "Orai"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=22.656015&N=86.352882",
+          "value": "?L=22.656015&M=86.352882",
           "synonyms": [
             "Jadugora"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=15.756595&N=76.192696",
+          "value": "?L=15.756595&M=76.192696",
           "synonyms": [
             "Kushtagi"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=22.96051&N=88.567406",
+          "value": "?L=22.96051&M=88.567406",
           "synonyms": [
-            "Haringhata"
+            "HariMghata"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=18.901457&N=73.176132",
+          "value": "?L=18.901457&M=73.176132",
           "synonyms": [
-            "Rasayani"
+            "RasayaMi"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=14.530457&N=75.801094",
+          "value": "?L=14.530457&M=75.801094",
           "synonyms": [
             "Harihar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=13.583274&N=76.540154",
+          "value": "?L=13.583274&M=76.540154",
           "synonyms": [
             "Huliyar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=11.786253&N=77.800781",
+          "value": "?L=11.786253&M=77.800781",
           "synonyms": [
-            "Mettur"
+            "Lettur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=23.849325&N=72.126625",
+          "value": "?L=23.849325&M=72.126625",
           "synonyms": [
-            "Patan"
+            "PataM"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=22.430889&N=87.321487",
+          "value": "?L=22.430889&M=87.321487",
           "synonyms": [
-            "Medinipur"
+            "LediMipur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=8.893212&N=76.614143",
+          "value": "?L=8.893212&M=76.614143",
           "synonyms": [
-            "Kollam"
+            "KollaL"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=26.49189&N=89.5271",
+          "value": "?L=26.49189&M=89.5271",
           "synonyms": [
             "Alipurduar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=21.045521&N=75.801094",
+          "value": "?L=21.045521&M=75.801094",
           "synonyms": [
             "Bhusawal"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=25.477585&N=85.709091",
+          "value": "?L=25.477585&M=85.709091",
           "synonyms": [
             "Barh"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=30.172716&N=77.299492",
+          "value": "?L=30.172716&M=77.299492",
           "synonyms": [
             "Jagadhri"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=21.105001&N=71.771645",
+          "value": "?L=21.105001&M=71.771645",
           "synonyms": [
-            "Mahuva"
+            "Lahuva"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=20.296059&N=85.824539",
+          "value": "?L=20.296059&M=85.824539",
           "synonyms": [
-            "Bhubaneswar"
+            "BhubaMeswar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=23.905445&N=87.52462",
+          "value": "?L=23.905445&M=87.52462",
           "synonyms": [
             "Suri"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=19.354979&N=84.986732",
+          "value": "?L=19.354979&M=84.986732",
           "synonyms": [
             "Chatrapur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=15.852792&N=74.498703",
+          "value": "?L=15.852792&M=74.498703",
           "synonyms": [
-            "Belgaum"
+            "BelgauL"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=10.92544&N=79.838005",
+          "value": "?L=10.92544&M=79.838005",
           "synonyms": [
             "Karaikal"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=14.623801&N=75.621788",
+          "value": "?L=14.623801&M=75.621788",
           "synonyms": [
-            "Ranebennur"
+            "RaMebeMMur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=9.383452&N=76.574059",
+          "value": "?L=9.383452&M=76.574059",
           "synonyms": [
             "Thiruvalla"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=22.728392&N=71.637077",
+          "value": "?L=22.728392&M=71.637077",
           "synonyms": [
-            "Surendranagar"
+            "SureMdraMagar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=12.651805&N=77.208946",
+          "value": "?L=12.651805&M=77.208946",
           "synonyms": [
-            "Channapatna"
+            "ChaMMapatMa"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=13.432515&N=77.727478",
+          "value": "?L=13.432515&M=77.727478",
           "synonyms": [
             "Chikkaballapura"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=12.715035&N=77.281296",
+          "value": "?L=12.715035&M=77.281296",
           "synonyms": [
-            "Ramanagara"
+            "RaLaMagara"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=16.779877&N=74.556374",
+          "value": "?L=16.779877&M=74.556374",
           "synonyms": [
-            "Jaysingpur"
+            "JaysiMgpur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=24.882618&N=72.858894",
+          "value": "?L=24.882618&M=72.858894",
           "synonyms": [
             "Sirohi"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=28.440554&N=74.493011",
+          "value": "?L=28.440554&M=74.493011",
           "synonyms": [
             "Sardarshahar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=24.633568&N=87.849251",
+          "value": "?L=24.633568&M=87.849251",
           "synonyms": [
             "Pakur"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=26.540457&N=88.719391",
+          "value": "?L=26.540457&M=88.719391",
           "synonyms": [
             "Jalpaiguri"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=14.16704&N=75.040298",
+          "value": "?L=14.16704&M=75.040298",
           "synonyms": [
             "Sagar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=19.07609&N=72.877426",
+          "value": "?L=19.07609&M=72.877426",
           "synonyms": [
-            "Mumbai"
+            "LuLbai"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=28.610001&N=77.230003",
+          "value": "?L=28.610001&M=77.230003",
           "synonyms": [
             "Delhi"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=26.85&N=80.949997",
+          "value": "?L=26.85&M=80.949997",
           "synonyms": [
-            "Lucknow"
+            "LuckMow"
           ]
         },
         {
           "type": "synonyms",
-          "value": "?M=16.1667&N=74.833298",
+          "value": "?L=16.1667&M=74.833298",
           "synonyms": [
             "Gokak"
           ]
@@ -2932,7 +2947,7 @@
       "output": {},
       "parent": "slot_2_1564343299280",
       "context": {
-        "disaster": "@weather"
+        "w_disaster": "@weather"
       },
       "metadata": {},
       "conditions": "@weather",
@@ -2962,6 +2977,23 @@
     },
     {
       "type": "standard",
+      "title": "Check Name not weather",
+      "output": {
+        "generic": []
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1564343299266"
+      },
+      "conditions": "#weather",
+      "dialog_node": "node_1_1564468793569",
+      "previous_sibling": "node_15_1564348661875"
+    },
+    {
+      "type": "standard",
       "title": "Collect Other Names",
       "output": {
         "generic": [
@@ -2983,7 +3015,7 @@
       "metadata": {},
       "conditions": "true",
       "dialog_node": "node_2_1553187944676",
-      "previous_sibling": "node_15_1564348661875"
+      "previous_sibling": "node_1_1564468793569"
     },
     {
       "type": "standard",
@@ -3129,6 +3161,35 @@
       "digress_out": "allow_all"
     },
     {
+      "type": "event_handler",
+      "output": {
+        "text": "Please enter a location"
+      },
+      "parent": "slot_2_1564469302675",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1564469302675",
+      "previous_sibling": "handler_3_1564469302675"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1564469302675",
+      "context": {
+        "w_location": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_3_1564469302675"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1564343299266",
+      "metadata": {},
+      "variable": "$w_location",
+      "dialog_node": "slot_2_1564469302675",
+      "previous_sibling": "slot_2_1564343299280"
+    },
+    {
       "type": "response_condition",
       "output": {
         "generic": [
@@ -3153,7 +3214,7 @@
       "output": {},
       "parent": "node_1_1564343299266",
       "metadata": {},
-      "variable": "$disaster",
+      "variable": "$w_disaster",
       "dialog_node": "slot_2_1564343299280",
       "previous_sibling": "node_6_1564343299280"
     },
@@ -3173,7 +3234,7 @@
       },
       "parent": "node_1_1564343299266",
       "metadata": {},
-      "conditions": "$city:Hyderabad",
+      "conditions": "$w_location:Hyderabad",
       "dialog_node": "node_11_1564346604200",
       "previous_sibling": "node_5_1564343299280"
     },
