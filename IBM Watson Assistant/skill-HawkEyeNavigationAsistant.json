@@ -1,0 +1,3318 @@
+{
+  "name": "HawkEyeNavigationAsistant",
+  "intents": [
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "see you"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "farewell"
+        },
+        {
+          "text": "c ya"
+        },
+        {
+          "text": "bye"
+        }
+      ]
+    },
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "appreciate it"
+        },
+        {
+          "text": "cheers"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thanks"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "kia ora"
+        }
+      ]
+    },
+    {
+      "intent": "weather",
+      "examples": [
+        {
+          "text": "flood level"
+        },
+        {
+          "text": "rains"
+        },
+        {
+          "text": "snow"
+        },
+        {
+          "text": "storm"
+        },
+        {
+          "text": "tsnuami"
+        },
+        {
+          "text": "flood in"
+        },
+        {
+          "text": "rain at"
+        },
+        {
+          "text": "flood at"
+        },
+        {
+          "text": "rain in"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "location_info",
+      "examples": [
+        {
+          "text": "flood level in hyderabad"
+        },
+        {
+          "text": "flood in hyderabad"
+        },
+        {
+          "text": "weaterh in hyderabad"
+        },
+        {
+          "text": "weather in hyderabad"
+        },
+        {
+          "text": "rain in hyderabad"
+        },
+        {
+          "text": "hyderabad flood"
+        },
+        {
+          "text": "Bhubaneswar flood"
+        },
+        {
+          "text": "kolkata flood situation"
+        },
+        {
+          "text": "montreal rain situation"
+        },
+        {
+          "text": "hyd flood"
+        },
+        {
+          "text": "Give me a list of locations"
+        },
+        {
+          "text": "List of location"
+        },
+        {
+          "text": "list of your locations"
+        },
+        {
+          "text": "locations in America"
+        },
+        {
+          "text": "Locations in Canada"
+        },
+        {
+          "text": "What are your locations?"
+        },
+        {
+          "text": "flood level in Gokak"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "weather",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "storm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "flood",
+          "synonyms": [
+            "severe flood",
+            "normal flood"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tornado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "snow",
+          "synonyms": [
+            "heavy snow"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "earthquake",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tsunami",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Kolkata",
+          "synonyms": [
+            "city of West Bengal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dibrugarh",
+          "synonyms": [
+            "city of Assam"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhagalpur",
+          "synonyms": [
+            "city of Bihar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bengaluru",
+          "synonyms": [
+            "city of Karnataka"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Toronto",
+          "synonyms": [
+            "The Big Toe",
+            "Muddy York",
+            "Queen City",
+            "Warden Avenue"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vancouver",
+          "synonyms": [
+            "The Big Smoke"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Calgary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderbad",
+          "synonyms": [
+            "hyd",
+            "secunderabad"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhubaneswar",
+          "synonyms": [
+            "bbsr",
+            "BBS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Siliguri",
+          "synonyms": [
+            "City of Hospitality",
+            "Gateway of North East India",
+            "city of West Bengal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Malda",
+          "synonyms": [
+            "Mango City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Durgapur",
+          "synonyms": [
+            "Ruhr of India",
+            "DGR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Darjeeling",
+          "synonyms": [
+            "The Queen of the Hills"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Asansol",
+          "synonyms": [
+            "Land of Black Diamonds"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kolkatta",
+          "synonyms": [
+            "City of Buildings",
+            "City of Castles"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nainital",
+          "synonyms": [
+            "City of Lakes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rishikesh",
+          "synonyms": [
+            "Yoga City",
+            "City of Sages"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mussorie",
+          "synonyms": [
+            "Hill Queen City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lucknow",
+          "synonyms": [
+            "City of Elephants",
+            "City of Marbels",
+            "City of Nawabs",
+            "city of Uttar Pradesh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Meerut",
+          "synonyms": [
+            "Scissor City",
+            "Sports Capital of india"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kanpur",
+          "synonyms": [
+            "Manchester of the East",
+            "Leather City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Varanasi or Benares or Banaras or Kashi",
+          "synonyms": [
+            "Religious Capital of India",
+            "Holy City",
+            "City of Temples"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Agra",
+          "synonyms": [
+            "Petha Nagari",
+            "Taj Nagari"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Allahabad or Prayag",
+          "synonyms": [
+            "City of Prime Ministers",
+            "Sangam City",
+            "Abode of the God"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderabad",
+          "synonyms": [
+            "Hitech City",
+            "Bangle City",
+            "City of Pearls",
+            "City of Nizams",
+            "city of Telangana"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tuticorin",
+          "synonyms": [
+            "Pearl Harbor of India",
+            "Pearl City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Coimbatore",
+          "synonyms": [
+            "Engineering City of India",
+            "Capital of Kongu Nadu",
+            "Textile city of India",
+            "Manchester of the South",
+            "city of Tamil Nadu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Madurai",
+          "synonyms": [
+            "Sleepless City",
+            "Temple City",
+            "City of Festivals",
+            "city of Tamil Nadu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chennai",
+          "synonyms": [
+            "Autohub of India",
+            "Banking capital of India",
+            "Motor city of India",
+            "Detroit of Asia or India",
+            "Gateway of South India",
+            "city of Tamil Nadu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nilgris",
+          "synonyms": [
+            "Blue Mountains"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tiruchirappali or Trichy",
+          "synonyms": [
+            "Energy Equipment & Fabrication Capital of India",
+            "Rock Fort City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Namakkal",
+          "synonyms": [
+            "Egg City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salem",
+          "synonyms": [
+            "Mango City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vaniyambadi",
+          "synonyms": [
+            "Leather City of South India"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yercaud",
+          "synonyms": [
+            "Poor Man’s Ooty"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jaisalmer",
+          "synonyms": [
+            "Golden City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jodhpur",
+          "synonyms": [
+            "Blue City",
+            "Sun City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Udaipur",
+          "synonyms": [
+            "Venice of the East",
+            "White City",
+            "Lake City",
+            "city of Rajasthan"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Patiala",
+          "synonyms": [
+            "Royal City",
+            "city of Punjab"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Amritsar",
+          "synonyms": [
+            "Golden City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Auroville",
+          "synonyms": [
+            "City of Dawn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cuttack",
+          "synonyms": [
+            "Silver City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhuvaneshwar",
+          "synonyms": [
+            "Temple City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New Delhi",
+          "synonyms": [
+            "City of Rallies",
+            "NDLS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Noida",
+          "synonyms": [
+            "IT Capital of NCR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shillong",
+          "synonyms": [
+            "Scotland of the East"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pune",
+          "synonyms": [
+            "Deccan Queen",
+            "city of Maharashtra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ichalkaranji",
+          "synonyms": [
+            "Manchester of Maharashtra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kolhapur",
+          "synonyms": [
+            "City of Wrestlers",
+            "city of Maharashtra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nagpur",
+          "synonyms": [
+            "City of Orange",
+            "city of Maharashtra",
+            "NGP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nasik",
+          "synonyms": [
+            "Wine Capital",
+            "Grape City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thane",
+          "synonyms": [
+            "City of Lakes",
+            "TNA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yavatmal",
+          "synonyms": [
+            "Cotton City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mundi",
+          "synonyms": [
+            "Power Hub City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhopal",
+          "synonyms": [
+            "City of Lakes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kochi or Cochin",
+          "synonyms": [
+            "Garden of Spices",
+            "Queen of Arabian Sea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Trivandrum",
+          "synonyms": [
+            "City of Statues",
+            "city of Kerala"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Alappuzha",
+          "synonyms": [
+            "Venice of the East"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kollam",
+          "synonyms": [
+            "Prince of Arabian Sea",
+            "Cashew Capital of the World",
+            "city of Kerala"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bengaluru or Bangalore",
+          "synonyms": [
+            "Pensioners Paradise",
+            "Space City",
+            "Silicon Valley",
+            "Electronic City",
+            "Garden City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Coorg",
+          "synonyms": [
+            "Scotland of India"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mysore",
+          "synonyms": [
+            "Sandal Wood City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dhanbad",
+          "synonyms": [
+            "Coal Capital of India"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jamshedpur",
+          "synonyms": [
+            "Pittsburg of India",
+            "Steel city",
+            "city of Jharkhand"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Srinagar",
+          "synonyms": [
+            "City of Rivers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gurgaon",
+          "synonyms": [
+            "Millennium City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Panipat",
+          "synonyms": [
+            "Eco-City",
+            "City of Weavers",
+            "city of Haryana"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bardoli",
+          "synonyms": [
+            "Butter City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Surat",
+          "synonyms": [
+            "Diamond City",
+            "city of Gujarat",
+            "ST"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Palanpur",
+          "synonyms": [
+            "Flower City",
+            "City of Diamonds"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ahmedabad",
+          "synonyms": [
+            "Boston of India",
+            "Manchester of India"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Muzzaffarpur",
+          "synonyms": [
+            "Lychee City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dispur",
+          "synonyms": [
+            "City of Temples"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Guwahati",
+          "synonyms": [
+            "Gateway of North East India",
+            "City of Temples",
+            "City of Eastern Astrology"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tezpur",
+          "synonyms": [
+            "City of Blood",
+            "city of Assam"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Montreal",
+          "synonyms": [
+            "The City-Mountain",
+            "Frenchtown",
+            "La Belle Ville"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vijayawada",
+          "synonyms": [
+            "Land of Victory",
+            "Place of Victory",
+            "city of Andhra Pradesh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kakinada",
+          "synonyms": [
+            "Second Madras",
+            "Pensioner’s Paradise",
+            "Fertilizer City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rajahmundry",
+          "synonyms": [
+            "Cultural City",
+            "city of Andhra Pradesh",
+            "RJY"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bhimavaram",
+          "synonyms": [
+            "Secon Bardoli of India"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Guntur",
+          "synonyms": [
+            "City of Spices",
+            "City of Chillies"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tenali",
+          "synonyms": [
+            "Andhra Paris",
+            "city of Andhra Pradesh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderabad-Secunderabad",
+          "synonyms": [
+            "Twin City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Grenoble",
+          "synonyms": [
+            "Capital of the Alps"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Split",
+          "synonyms": [
+            "The Diocletian’s City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Leipzig",
+          "synonyms": [
+            "Bimbo Town"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bangalore",
+          "synonyms": [
+            "The City of Gardens"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tehran",
+          "synonyms": [
+            "The City of 72 Nations"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ancona",
+          "synonyms": [
+            "Doric City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Udine",
+          "synonyms": [
+            "Capital of the Great War"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Beirut",
+          "synonyms": [
+            "Paris of the Middle East"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Wroclaw",
+          "synonyms": [
+            "City of Hundred Bridges"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Macau",
+          "synonyms": [
+            "Oyster City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Honolulu",
+          "synonyms": [
+            "Sheltered Bay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kiev",
+          "synonyms": [
+            "The Mother of Rus’ Cities"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Zurich",
+          "synonyms": [
+            "Little Big City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bilbao",
+          "synonyms": [
+            "El Bocho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cadiz",
+          "synonyms": [
+            "The Little Silver Cup"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Porto",
+          "synonyms": [
+            "The Invincible City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manila",
+          "synonyms": [
+            "City by the Bay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lima",
+          "synonyms": [
+            "City of the Kings"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rotterdam",
+          "synonyms": [
+            "Manhattan upon Meuse"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tijuana",
+          "synonyms": [
+            "Television Capital of the World"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cuernavaca",
+          "synonyms": [
+            "The City of Eternal Spring"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kuala Lumpur",
+          "synonyms": [
+            "Golden Triangle"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vicenza",
+          "synonyms": [
+            "City of Gold"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tivoli",
+          "synonyms": [
+            "City of Delights"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sanremo",
+          "synonyms": [
+            "The City of Dreams"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bolzano",
+          "synonyms": [
+            "The German One",
+            "The Door to the Dolomites"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tel Aviv",
+          "synonyms": [
+            "The City that Never Stops"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Marseille",
+          "synonyms": [
+            "Phocean City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bruges",
+          "synonyms": [
+            "Venice of the North"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Zagreb",
+          "synonyms": [
+            "Little Vienna"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Adelaide",
+          "synonyms": [
+            "City of Churches"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Beijing",
+          "synonyms": [
+            "The Forbidden City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Calcutta",
+          "synonyms": [
+            "City of Joy",
+            "City of Love",
+            "City of Palaces"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Hague",
+          "synonyms": [
+            "City of Peace and Justice"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lisbon",
+          "synonyms": [
+            "City With a Future"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Birmingham",
+          "synonyms": [
+            "Brum",
+            "The City of a Thousand Trades"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Munich",
+          "synonyms": [
+            "World City with Heart"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hong Kong",
+          "synonyms": [
+            "Pearl of the Orient"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dallas",
+          "synonyms": [
+            "Big D"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Athens",
+          "synonyms": [
+            "The City of Violet Crown"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Madrid",
+          "synonyms": [
+            "The Forum",
+            "El Foro"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "St Petersburg",
+          "synonyms": [
+            "The Mind of Russia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Warsaw",
+          "synonyms": [
+            "Big Village in the Middle of Nowhere",
+            "Default City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Oslo",
+          "synonyms": [
+            "Tiger Town"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jaipur",
+          "synonyms": [
+            "Paris of India",
+            "City of Palaces",
+            "Pink City",
+            "The Pink City",
+            "city of Rajasthan",
+            "JP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Berlin",
+          "synonyms": [
+            "The Grey City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nice",
+          "synonyms": [
+            "Angels City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bordeaux",
+          "synonyms": [
+            "City of Wine"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Helsinki",
+          "synonyms": [
+            "The White City of the North"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dubrovnik",
+          "synonyms": [
+            "The Pearl of the Adriatic"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sao Paulo",
+          "synonyms": [
+            "Sampa",
+            "Land of Drizzle",
+            "Brazil’s Locomotive"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sydney",
+          "synonyms": [
+            "The Harbour City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Melbourne",
+          "synonyms": [
+            "Europe of Australia",
+            "Bleak City",
+            "City by the Bay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ushuaia",
+          "synonyms": [
+            "The End of the World"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Buenos Aires",
+          "synonyms": [
+            "Queen of the Plata",
+            "Paris of the Americas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cairo",
+          "synonyms": [
+            "Paris of the Nile"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Milano",
+          "synonyms": [
+            "The Drinkable City",
+            "Fashion Capital of the World"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Palermo",
+          "synonyms": [
+            "The Happy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Genova",
+          "synonyms": [
+            "The Superb"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Torino",
+          "synonyms": [
+            "City of Four Rivers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bologna",
+          "synonyms": [
+            "the fat)",
+            "the red",
+            "La Grassa (the educated",
+            "La Rossa",
+            "Red City; La Dotta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Naples",
+          "synonyms": [
+            "City of the Sun"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Singapore",
+          "synonyms": [
+            "The Lion City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": [
+            "City of Dreams",
+            "Hollywood of India",
+            "Gateway of India",
+            "City of Seven Islands",
+            "The City of Dreams",
+            "city of Maharashtra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salzburg",
+          "synonyms": [
+            "White City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rio de Janeiro",
+          "synonyms": [
+            "Marvelous City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Geneva",
+          "synonyms": [
+            "The Peace Capital"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Edinburgh",
+          "synonyms": [
+            "Auld Reekie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Moscow",
+          "synonyms": [
+            "Third Rome",
+            "The Forty Forties",
+            "The Whitestone"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "San Francisco",
+          "synonyms": [
+            "Frisco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Boston",
+          "synonyms": [
+            "The Hub"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jerusalem",
+          "synonyms": [
+            "The Holy City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dublin",
+          "synonyms": [
+            "The Fair City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Budapest",
+          "synonyms": [
+            "Pearl of the Danube"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Barcelona",
+          "synonyms": [
+            "The City of Gaudi",
+            "The City of Counts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Florence",
+          "synonyms": [
+            "The City of Lilies"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bucharest",
+          "synonyms": [
+            "Little Paris"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Seattle",
+          "synonyms": [
+            "The Emerald City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rome",
+          "synonyms": [
+            "City of the Seven Hills",
+            "The Eternal City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pittsburgh",
+          "synonyms": [
+            "Iron City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Petra",
+          "synonyms": [
+            "The Rose Red City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Memphis",
+          "synonyms": [
+            "Bluff City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Miami",
+          "synonyms": [
+            "Little Cuba",
+            "The Magic City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Detroit",
+          "synonyms": [
+            "Motor City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "London",
+          "synonyms": [
+            "The Smoke",
+            "The Old Smoke",
+            "The Square Mile"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vienna",
+          "synonyms": [
+            "The Imperial City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Venice",
+          "synonyms": [
+            "Bride of the Sea",
+            "La Serenissima"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Amsterdam",
+          "synonyms": [
+            "Venice of the North"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Philadelphia",
+          "synonyms": [
+            "Philly",
+            "City of Brotherly Love"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New Orleans",
+          "synonyms": [
+            "The Big Easy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Los Angeles",
+          "synonyms": [
+            "The City of Angels"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chicago",
+          "synonyms": [
+            "The Windy City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Las Vegas",
+          "synonyms": [
+            "Sin City"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New York",
+          "synonyms": [
+            "The Big Apple"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Prague",
+          "synonyms": [
+            "The Mother of Cities",
+            "The Golden City",
+            "The City of Hundred Spires"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paris",
+          "synonyms": [
+            "La Ville-Lumiere",
+            "The City of Light",
+            "The City of Love"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Visakhapatnam",
+          "synonyms": [
+            "city of Andhra Pradesh",
+            "VSKP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tirupati",
+          "synonyms": [
+            "city of Andhra Pradesh",
+            "TPTY"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Piduguralla",
+          "synonyms": [
+            "city of Andhra Pradesh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Vadodara",
+          "synonyms": [
+            "city of Gujarat"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thoothukudi",
+          "synonyms": [
+            "city of Tamil Nadu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pondicherry",
+          "synonyms": [
+            "city of Puducherry"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VIZIANAGRAM JN",
+          "synonyms": [
+            "VZM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VIJAYAWADA JN",
+          "synonyms": [
+            "BZA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VIDISHA",
+          "synonyms": [
+            "BHS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VARANASI JN",
+          "synonyms": [
+            "BSB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VALSAD",
+          "synonyms": [
+            "BL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "VADODARA JN",
+          "synonyms": [
+            "BRC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TUNDLA JN",
+          "synonyms": [
+            "TDL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "THRISUR",
+          "synonyms": [
+            "TCR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "TATANAGAR JN",
+          "synonyms": [
+            "TATA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SHAHJEHANPUR",
+          "synonyms": [
+            "SPN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SAWAI MADHOPUR",
+          "synonyms": [
+            "SWM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SALEM TOWN",
+          "synonyms": [
+            "SXT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "SALEM JN",
+          "synonyms": [
+            "SA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ROORKEE",
+          "synonyms": [
+            "RK"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "RENIGUNTA JN",
+          "synonyms": [
+            "RU"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "RAIPUR JN",
+          "synonyms": [
+            "R"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PUNE JN",
+          "synonyms": [
+            "PUNE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PHILLAUR JN",
+          "synonyms": [
+            "PHR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PHAGWARA JN",
+          "synonyms": [
+            "PGW"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PATNA JN",
+          "synonyms": [
+            "PNBE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ONGOLE",
+          "synonyms": [
+            "OGL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "NELLORE",
+          "synonyms": [
+            "NLR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "NASIK ROAD",
+          "synonyms": [
+            "NK"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "NADIAD JN",
+          "synonyms": [
+            "ND"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "N GHAZIABAD",
+          "synonyms": [
+            "GZN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MUGHAL SARAI JN",
+          "synonyms": [
+            "MGS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MORADABAD",
+          "synonyms": [
+            "MB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MOKAMEH JN",
+          "synonyms": [
+            "MKA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MATHURA JN",
+          "synonyms": [
+            "MTJ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MANMAD JN",
+          "synonyms": [
+            "MMR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "LUDHIANA JN",
+          "synonyms": [
+            "LDH"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "LUCKNOW NR",
+          "synonyms": [
+            "LKO"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "LUCKNOW CITY",
+          "synonyms": [
+            "LC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KOTA JN",
+          "synonyms": [
+            "KOTA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KIUL JN",
+          "synonyms": [
+            "KIUL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KHURDA ROAD JN",
+          "synonyms": [
+            "KUR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KHARAGPUR JN",
+          "synonyms": [
+            "KGP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KATNI",
+          "synonyms": [
+            "KTE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KANPUR CENTRAL",
+          "synonyms": [
+            "CNB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KALYAN JN",
+          "synonyms": [
+            "KYN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "KACHEGUDA",
+          "synonyms": [
+            "KCG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JHANSI JN",
+          "synonyms": [
+            "JHS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JALGAON JN",
+          "synonyms": [
+            "JL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JALANDHAR CITY",
+          "synonyms": [
+            "JUC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JALANDHAR CANT",
+          "synonyms": [
+            "JRC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JABALPUR",
+          "synonyms": [
+            "JBP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ITARSI JN",
+          "synonyms": [
+            "ET"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IGATPURI",
+          "synonyms": [
+            "IGP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "HOWRAH JN",
+          "synonyms": [
+            "HWH"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "H NIZAMUDDIN",
+          "synonyms": [
+            "NZM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "GWALIOR",
+          "synonyms": [
+            "GWL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "GUDUR JN",
+          "synonyms": [
+            "GDR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "GORAKHPUR JN",
+          "synonyms": [
+            "GKP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "GHAZIABAD",
+          "synonyms": [
+            "GZB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "FARIDABAD",
+          "synonyms": [
+            "FDB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ERODE JN",
+          "synonyms": [
+            "ED"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ERNAKULAM JN",
+          "synonyms": [
+            "ERS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DURG",
+          "synonyms": [
+            "DURG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DELHI",
+          "synonyms": [
+            "DLI"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DAUND JN",
+          "synonyms": [
+            "DD"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DADAR",
+          "synonyms": [
+            "DR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CHENNAI CENTRAL",
+          "synonyms": [
+            "MAS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BINA JN",
+          "synonyms": [
+            "BINA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BILASPUR JN",
+          "synonyms": [
+            "BSP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BHUSAVAL JN",
+          "synonyms": [
+            "BSL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BHOPAL JN",
+          "synonyms": [
+            "BPL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BHATAPARA",
+          "synonyms": [
+            "BYT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BEAS",
+          "synonyms": [
+            "BEAS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BAREILLY",
+          "synonyms": [
+            "BE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BARDDHAMAN JN",
+          "synonyms": [
+            "BWN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BARABANKI JN",
+          "synonyms": [
+            "BBK"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BANGALORE EAST",
+          "synonyms": [
+            "BNCE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ASANSOL JN",
+          "synonyms": [
+            "ASN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AMRITSAR JN",
+          "synonyms": [
+            "ASR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AMBALA CANT JN",
+          "synonyms": [
+            "UMB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ALUVA",
+          "synonyms": [
+            "AWY"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ALLAHABAD JN",
+          "synonyms": [
+            "ALD"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ALLAHABAD CITY",
+          "synonyms": [
+            "ALY"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AHMEDABAD JN",
+          "synonyms": [
+            "ADI"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AGRA CANTT",
+          "synonyms": [
+            "AGC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Itanagar",
+          "synonyms": [
+            "Land of Rising Sun"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Akola",
+          "synonyms": [
+            "city of Maharashtra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Muzaffarpur",
+          "synonyms": [
+            "city of Bihar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mussoorie",
+          "synonyms": [
+            "city of Uttarakhand"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mangalore",
+          "synonyms": [
+            "city of Karnataka"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ludhiana",
+          "synonyms": [
+            "city of Punjab"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kurnool",
+          "synonyms": [
+            "city of Andhra Pradesh"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "lat_long",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "?M=24.879999&N=74.629997",
+          "synonyms": [
+            "Chittorgarh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=21.25&N=81.629997",
+          "synonyms": [
+            "Raipur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=24.7945&N=73.055",
+          "synonyms": [
+            "Pindwara"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=19.155001&N=72.849998",
+          "synonyms": [
+            "Goregaon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=16.994444&N=73.300003",
+          "synonyms": [
+            "Ratnagiri"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=28.590361&N=78.571762",
+          "synonyms": [
+            "Sambhal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=23.597969&N=72.969818",
+          "synonyms": [
+            "Himmatnagar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=21.190449&N=81.28492",
+          "synonyms": [
+            "Durg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=18.106659&N=83.395554",
+          "synonyms": [
+            "Vizianagaram"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=22.422455&N=85.760651",
+          "synonyms": [
+            "Jorapokhar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=30.525005&N=75.890121",
+          "synonyms": [
+            "Malerkotla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=19.186354&N=73.191948",
+          "synonyms": [
+            "Ambernath"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=23.223047&N=82.87056",
+          "synonyms": [
+            "Surajpur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=25.989836&N=79.450035",
+          "synonyms": [
+            "Orai"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=22.656015&N=86.352882",
+          "synonyms": [
+            "Jadugora"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=15.756595&N=76.192696",
+          "synonyms": [
+            "Kushtagi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=22.96051&N=88.567406",
+          "synonyms": [
+            "Haringhata"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=18.901457&N=73.176132",
+          "synonyms": [
+            "Rasayani"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=14.530457&N=75.801094",
+          "synonyms": [
+            "Harihar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=13.583274&N=76.540154",
+          "synonyms": [
+            "Huliyar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=11.786253&N=77.800781",
+          "synonyms": [
+            "Mettur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=23.849325&N=72.126625",
+          "synonyms": [
+            "Patan"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=22.430889&N=87.321487",
+          "synonyms": [
+            "Medinipur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=8.893212&N=76.614143",
+          "synonyms": [
+            "Kollam"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=26.49189&N=89.5271",
+          "synonyms": [
+            "Alipurduar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=21.045521&N=75.801094",
+          "synonyms": [
+            "Bhusawal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=25.477585&N=85.709091",
+          "synonyms": [
+            "Barh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=30.172716&N=77.299492",
+          "synonyms": [
+            "Jagadhri"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=21.105001&N=71.771645",
+          "synonyms": [
+            "Mahuva"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=20.296059&N=85.824539",
+          "synonyms": [
+            "Bhubaneswar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=23.905445&N=87.52462",
+          "synonyms": [
+            "Suri"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=19.354979&N=84.986732",
+          "synonyms": [
+            "Chatrapur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=15.852792&N=74.498703",
+          "synonyms": [
+            "Belgaum"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=10.92544&N=79.838005",
+          "synonyms": [
+            "Karaikal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=14.623801&N=75.621788",
+          "synonyms": [
+            "Ranebennur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=9.383452&N=76.574059",
+          "synonyms": [
+            "Thiruvalla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=22.728392&N=71.637077",
+          "synonyms": [
+            "Surendranagar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=12.651805&N=77.208946",
+          "synonyms": [
+            "Channapatna"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=13.432515&N=77.727478",
+          "synonyms": [
+            "Chikkaballapura"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=12.715035&N=77.281296",
+          "synonyms": [
+            "Ramanagara"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=16.779877&N=74.556374",
+          "synonyms": [
+            "Jaysingpur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=24.882618&N=72.858894",
+          "synonyms": [
+            "Sirohi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=28.440554&N=74.493011",
+          "synonyms": [
+            "Sardarshahar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=24.633568&N=87.849251",
+          "synonyms": [
+            "Pakur"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=26.540457&N=88.719391",
+          "synonyms": [
+            "Jalpaiguri"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=14.16704&N=75.040298",
+          "synonyms": [
+            "Sagar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=19.07609&N=72.877426",
+          "synonyms": [
+            "Mumbai"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=28.610001&N=77.230003",
+          "synonyms": [
+            "Delhi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=26.85&N=80.949997",
+          "synonyms": [
+            "Lucknow"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "?M=16.1667&N=74.833298",
+          "synonyms": [
+            "Gokak"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "sys-person",
+      "values": []
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1553188190076",
+      "disabled": true,
+      "metadata": {},
+      "dialog_node": "node_11_1553188273386"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1564404559530",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1564404559530",
+      "previous_sibling": "handler_2_1564404559530"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1564404559530",
+      "context": {
+        "lat_long": "@lat_long"
+      },
+      "conditions": "@lat_long",
+      "event_name": "input",
+      "dialog_node": "handler_2_1564404559530"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "variable": "$city",
+      "dialog_node": "slot_28_1553188906113",
+      "previous_sibling": "node_5_1564352737305"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=28.651&M=77.231"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Delhi && $disaster:flood",
+      "dialog_node": "node_18_1564349702794",
+      "previous_sibling": "node_36_1553190490705"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=12.971&M=77.593"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Bengaluru && $disaster:flood",
+      "dialog_node": "node_19_1564349717996",
+      "previous_sibling": "node_18_1564349702794"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=19.072&M=72.882"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Mumbai && $disaster:flood",
+      "dialog_node": "node_17_1564349282287",
+      "previous_sibling": "node_23_1564349744449"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=13.087&M=80.278"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Chennai && $disaster:flood",
+      "dialog_node": "node_22_1564349741932",
+      "previous_sibling": "node_21_1564349739435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=23.025&M=72.587"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Ahmedabad && $disaster:flood",
+      "dialog_node": "node_23_1564349744449",
+      "previous_sibling": "node_22_1564349741932"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we don’t have flood level data of @sys-location. 🙁 Please visit http://google.org/crisismap/weather_and_events for more info."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "@sys-location",
+      "dialog_node": "node_5_1564352737305",
+      "previous_sibling": "node_4_1564352722007"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1553188181852",
+      "variable": "$disaster",
+      "dialog_node": "slot_12_1564347078660",
+      "previous_sibling": "slot_28_1553188906113"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=17.41&M=78.34"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Hyderabad && $disaster:flood",
+      "dialog_node": "node_10_1564346101456",
+      "previous_sibling": "node_4_1564404624559"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at http://google.org/crisismap/weather_and_events"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city",
+      "dialog_node": "node_4_1564352722007",
+      "previous_sibling": "node_17_1564349282287"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=22.562&M=88.363"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Kolkata && $disaster:flood",
+      "dialog_node": "node_21_1564349739435",
+      "previous_sibling": "node_19_1564349717996"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=18.519&M=73.855"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Pune && $disaster:flood",
+      "dialog_node": "node_16_1564349164533",
+      "previous_sibling": "node_10_1564346101456"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=21.195&M=72.830"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "$city:Surat && $disaster:flood",
+      "dialog_node": "node_36_1553190490705",
+      "previous_sibling": "node_16_1564349164533"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1553188181852",
+      "variable": "$lat_long",
+      "dialog_node": "slot_1_1564404559530",
+      "previous_sibling": "slot_12_1564347078660"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html + $lat_long"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1553188181852",
+      "metadata": {},
+      "conditions": "@lat_long != \"\" && $disaster:flood",
+      "dialog_node": "node_4_1564404624559"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1564343299280",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_4_1564343299280",
+      "previous_sibling": "handler_3_1564343299280"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1564343299280",
+      "context": {
+        "disaster": "@weather"
+      },
+      "metadata": {},
+      "conditions": "@weather",
+      "event_name": "input",
+      "dialog_node": "handler_3_1564343299280"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Please enter city"
+      },
+      "parent": "slot_28_1553188906113",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_30_1553188906113",
+      "previous_sibling": "handler_29_1553188906113"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_28_1553188906113",
+      "context": {
+        "city": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_29_1553188906113"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Other Names",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. How can I help you? You can ask me about our store hours, locations, or flower recommendations."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_2_1553187944676",
+      "previous_sibling": "node_15_1564348661875"
+    },
+    {
+      "type": "standard",
+      "title": "Check Name not location",
+      "output": {
+        "generic": []
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1553188181852"
+      },
+      "conditions": "#location_info",
+      "dialog_node": "node_15_1564348661875",
+      "previous_sibling": "node_8_1564343725249"
+    },
+    {
+      "type": "standard",
+      "title": "Check Name not greetings",
+      "output": {
+        "generic": []
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1553188190076"
+      },
+      "conditions": "#greetings",
+      "dialog_node": "node_8_1564343725249",
+      "previous_sibling": "node_1_1553187941079"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Sys-Person Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. How can I help you? You can ask me about our store hours, locations, or flower recommendations."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "@sys-person"
+      },
+      "metadata": {},
+      "conditions": "@sys-person",
+      "dialog_node": "node_1_1553187941079"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice talking to you today, $name. We hope you have a safe journey in  $city."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1553188185679",
+      "metadata": {},
+      "conditions": "#goodbyes",
+      "dialog_node": "node_10_1553188194207",
+      "previous_sibling": "node_9_1553188192366"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome, $name. Please let me know if you need anything else."
+              },
+              {
+                "text": "My pleasure, $name."
+              },
+              {
+                "text": "No problem, $name. Let me know if there is anything else I can help with."
+              },
+              {
+                "text": "I aim to please. 😊"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1553188185679",
+      "metadata": {},
+      "conditions": "#thank_you",
+      "dialog_node": "node_9_1553188192366",
+      "previous_sibling": "node_8_1553188190076"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi $name. How can I help you?"
+              },
+              {
+                "text": "Hello $name. How may I assist you today?"
+              },
+              {
+                "text": "Hi $name. What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1553188185679",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#greetings",
+      "dialog_node": "node_8_1553188190076",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we only have flood level data. 🙁 Please visit http://google.org/crisismap/weather_and_events for other info."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1564343299266",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_6_1564343299280",
+      "previous_sibling": "node_11_1564346604200"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1564343299266",
+      "metadata": {},
+      "variable": "$disaster",
+      "dialog_node": "slot_2_1564343299280",
+      "previous_sibling": "node_6_1564343299280"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood levels can be found at file:///C:/Users/rpatro/Downloads/HawkEyeDemo-Leaflet/LeafletDemoFlood.html?L=17.41&M=78.34"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1564343299266",
+      "metadata": {},
+      "conditions": "$city:Hyderabad",
+      "dialog_node": "node_11_1564346604200",
+      "previous_sibling": "node_5_1564343299280"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$city flood level can be found at https://www.google.com/maps/search/$city"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1564343299266",
+      "metadata": {},
+      "conditions": "$disaster != 'floods'",
+      "dialog_node": "node_5_1564343299280"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "Please enter weather condition"
+      },
+      "parent": "slot_12_1564347078660",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_14_1564347078660",
+      "previous_sibling": "handler_13_1564347078660"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_12_1564347078660",
+      "context": {
+        "disaster": "@weather"
+      },
+      "conditions": "@weather",
+      "event_name": "input",
+      "dialog_node": "handler_13_1564347078660"
+    },
+    {
+      "type": "frame",
+      "title": "Weather",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#weather",
+      "dialog_node": "node_1_1564343299266",
+      "previous_sibling": "node_6_1553188181852"
+    },
+    {
+      "type": "frame",
+      "title": "Location Information",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#location_info",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1553188181852",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "It looks like we are not quite getting each other today. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1553188185679"
+    },
+    {
+      "type": "folder",
+      "title": "Chitchat",
+      "metadata": {},
+      "dialog_node": "node_7_1553188185679",
+      "previous_sibling": "node_1_1564343299266"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I'm HawkEye chatbot. What name can I call you by?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "7c2a5e21-f80e-4ebe-9f6b-dc56b2518be6",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
