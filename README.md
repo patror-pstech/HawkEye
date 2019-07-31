@@ -50,7 +50,7 @@ This folder contains a word document about [the idea](https://github.com/patror-
 ## 2. [Watson Visual Recognition Classses](https://github.com/patror-pstech/HawkEye/tree/master/Watson%20Visual%20Recognition%20Classses)
 This folder contains different zip files with categorized images. Just drag and drop the images in watson Visual Recognition and it will train the model.
 
-## 3. [Python and Mqtt])(https://github.com/patror-pstech/HawkEye/tree/master/Python%20and%20Mqtt)
+## 3. [Python and Mqtt](https://github.com/patror-pstech/HawkEye/tree/master/Python%20and%20Mqtt)
 This folder contains the python code and Mqtt to execute the trained Watson Visual Recognition model.
 
 ## 4. [Jupyter Notebook](https://github.com/patror-pstech/HawkEye/tree/master/Jupyter%20Notebook)
